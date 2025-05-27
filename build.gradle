@@ -53,6 +53,8 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-log4j2'
     implementation 'org.springframework.cloud:spring-cloud-starter-config'
     implementation 'org.modelmapper:modelmapper:3.2.0'
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+    implementation 'org.springframework.boot:spring-boot-starter-oauth2-resource-server'
     //implementation 'org.springframework.cloud:spring-cloud-starter-vault-config'
 
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
@@ -70,6 +72,7 @@ dependencies {
     annotationProcessor 'org.mapstruct:mapstruct-processor:1.5.5.Final'
 
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation 'org.springframework.security:spring-security-test'
     testImplementation 'io.projectreactor:reactor-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }

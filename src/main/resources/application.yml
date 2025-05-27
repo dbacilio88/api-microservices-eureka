@@ -6,3 +6,22 @@ spring:
       name: api-microservices-eureka
       profile: ${ENV_CLOUD_CONFIG_PROFILE:default}
       label: ${ENV_CLOUD_CONFIG_LABEL:master}
+  security:
+    user:
+      name: eureka
+      password: password
+
+
+logging:
+  level:
+    org:
+      springframework:
+        web: info
+        security: info
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+      base-path: /actuator/discovery
